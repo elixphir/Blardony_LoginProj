@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    background-color: #02504A;
+    top: 0;
+    position: sticky;
+}
+
+#logoIMG {
+    width: 45px;
+    height: 45px;
+    padding: 3px;
+}
+
+@keyframes rainbow {
+	0% {color: rgb(180, 1, 1);}
+	20% {color: rgb(230, 140, 24);}
+	51% {color: rgb(221, 189, 6);}
+	68% {color: rgb(31, 129, 60);}
+	85% {color: rgb(16, 109, 151);}
+	95% {color: rgb(101, 33, 110);}
+	100% {color: rgb(180, 1, 1);}
+}
+
+#title {
+    font-size: 70%;
+    font-family: Rubik;
+    -webkit-text-stroke-width: 0.01px;
+  	-webkit-text-stroke-color: #E6DBC7;
+    animation: rainbow 8s infinite
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-right: 125px;
+    margin-left: 125px;
+}
+
+.content {
+    background-color: #fff4ed;
+    font-family: Rubik;
+    padding: 40px;
+    border-radius: 25px;
+}
+
+#about {
+    width: 60%;
+    float:left;
+}
+
+#aboutTitle {
+    animation: rainbow 8s infinite;
+}
+
+#login {
+    text-align: center;
+    float: right;
+    border: solid black 1px;
+    border-radius: 15px;
+    margin-right: 2%;
+}
+
+#loginTitle {
+    background-color: #69140E;
+    color: #f0e7e1;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#loginError {
+    font-style: italic;
+    font-size: 70%;
+    color: red;
+    margin-bottom: 10px;
+}
+
+#inputs {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#usernameDiv {
+    margin-bottom: 5px;
+}
+
+input {
+    background-color: whitesmoke;
+    border: solid black 0.1px;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+input:hover, input:focus {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+#loginButton {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 30px;
+    background-color: #69140E;
+    color: #f0e7e1;
+    font-family: Rubik;
+    font-size: 110%;
+}
+
+footer{
+    font-family: Rubik;
+    font-size: 70%;
+    color: #f0e7e1;
+    padding: 10px;
+    text-align: center;
+    background-color: #02504A;
+}
+
+#sprites {
+    margin-top: 5px;
+}
+
+#fbSprite {
+	background: url('images/sprites.png') no-repeat -25px 0px;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+}
+#facebook:hover #fbSprite {
+	background: url('images/sprites.png') no-repeat -175px 0px;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+}
+#facebook:active #fbSprite {
+	background: url('images/sprites.png') no-repeat -100px 0px;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+}
+#igSprite {
+	background: url('images/sprites.png') no-repeat 0px 0px;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%
+}
+
+#instagram:hover #igSprite {
+	background: url('images/sprites.png') no-repeat -150px 0px;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%
+}
+#instagram:active #igSprite {
+	background: url('images/sprites.png') no-repeat -75px 0px;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%
+}
